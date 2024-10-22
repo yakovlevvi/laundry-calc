@@ -1,0 +1,26 @@
+.laundry {
+	min-height: 100vh;
+	padding: 20px 0;
+
+	&__wrapper {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px 20px;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		align-items: end;
+	}
+
+	&__item {
+		height: 100%;
+	}
+}

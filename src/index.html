@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор стирки</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<main>
+		<section class="laundry">
+			<div class="container">
+				<div class="laundry__wrapper">
+					<form id="laundry-form" class="laundry-form" action="#" method="post">
+						<div class="laundry-form__radio-wrap">
+							<div class="custom-radio">
+								<input class="custom-radio__field" type="radio" id="type-laundry" name="type" value="laundry" checked>
+								<label class="custom-radio__label" for="type-laundry">Стирка</label>
+							</div>
+							<div class="custom-radio">
+								<input class="custom-radio__field" type="radio" id="type-dry" name="type" value="dry">
+								<label class="custom-radio__label" for="type-dry">Хим чистка</label>
+							</div>
+						</div>
+						<ul class="laundry__list">
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="duvet-feather" class="laundry-block__label">Одеяло(пух)</label>
+									<span class="laundry-block__note">(только стирка)</span>
+									<div class="laundry-block__wrap">
+										<input class="laundry-block__field" type="number" id="duvet-feather" name="duvet-feather" value="0">
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="duvet-fiber" class="laundry-block__label">Одеяло(синтепон)</label>
+									<div class="laundry-block__wrap">
+										<input class="laundry-block__field" type="number" id="duvet-fiber" name="duvet-fiber" value="0">
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="pillow-feather" class="laundry-block__label">Подушка(пух)</label>
+									<span class="laundry-block__note">(только стирка)</span>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="pillow-feather" name="pillow-feather"
+											value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="pillow-fiber" class="laundry-block__label">Подушка(синтепон)</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="pillow-fiber" name="pillow-fiber" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="down-jacket" class="laundry-block__label">Пуховик</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="down-jacket" name="down-jacket" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="curtains" class="laundry-block__label">Шторы</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="curtains" name="curtains" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="bedcover" class="laundry-block__label">Покрывало</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="bedcover" name="bedcover" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="jacket" class="laundry-block__label">Пиджак</label>
+									<span class="laundry-block__note">(только dry)</span>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="jacket" name="jacket" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="trousers" class="laundry-block__label">Брюки</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="trousers" name="trousers" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="jeans" class="laundry-block__label">Джинсы</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="jeans" name="jeans" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="coat" class="laundry-block__label">Пальто</label>
+									<span class="laundry-block__note">(только dry)</span>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="coat" name="coat" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="cloak" class="laundry-block__label">Плащ</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="cloak" name="cloak" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="shirt" class="laundry-block__label">Рубашка</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="shirt" name="shirt" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="t-shirt" class="laundry-block__label">Футболка</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="t-shirt" name="t-shirt" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="blouse" class="laundry-block__label">Блузка</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="blouse" name="blouse" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="sweater" class="laundry-block__label">Свитер</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="sweater" name="sweater" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="tie" class="laundry-block__label">Галстук</label>
+									<span class="laundry-block__note">(только dry)</span>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="tie" name="tie" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="dress" class="laundry-block__label">Платье повседневное</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="dress" name="dress" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="formal-dress" class="laundry-block__label">Вечернее платье</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="formal-dress" name="formal-dress" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="skirt" class="laundry-block__label">Юбка</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="skirt" name="skirt" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block laundry-block--accent">
+									<label for="napkin" class="laundry-block__label">Салфетка</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="napkin" name="napkin" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block laundry-block--accent">
+									<label for="tablecloth" class="laundry-block__label">Скатерть</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="tablecloth" name="tablecloth" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="pillowcase" class="laundry-block__label">Наволочка</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="pillowcase" name="pillowcase" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="sheets" class="laundry-block__label">Простынь</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="sheets" name="sheets" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="duvet-cover" class="laundry-block__label">Пододеяльник</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="duvet-cover" name="duvet-cover" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="plaid" class="laundry-block__label">Плед</label>
+									<span class="laundry-block__note">(только стирка)</span>
+									<div class="laundry-block__wrap">
+										<input class="laundry-block__field" type="number" id="plaid" name="plaid" value="0">
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="gloves" class="laundry-block__label">Перчатки</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="gloves" name="gloves" value="0">
+
+									</div>
+								</div>
+							</li>
+							<li class="laundry__item">
+								<div class="laundry-block">
+									<label for="stains-removing" class="laundry-block__label">Пятновыводка</label>
+									<div class="laundry-block__wrap">
+
+										<input class="laundry-block__field" type="number" id="stains-removing" name="stains-removing"
+											value="0">
+
+									</div>
+								</div>
+							</li>
+						</ul>
+					</form>
+					<div id="result" class="result"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="./js/main.js" type="module" defer></script>
+</body>
+
+</html>

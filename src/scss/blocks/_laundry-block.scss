@@ -1,0 +1,41 @@
+.laundry-block {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
+	padding: 7px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	height: 100%;
+	box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.2);
+
+	&--accent {
+		background-color: #c6f2ff;
+	}
+
+	&__wrap {
+		margin: auto 0 0;
+	}
+
+	&__label {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__field {
+		max-width: 80px;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 5px;
+		font-size: 14px;
+		line-height: 18px;
+		background-color: transparent;
+	}
+
+	&__note {
+		color: red;
+		font-weight: 700;
+	}
+}
